@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}  
+
+header, .hero--section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero--section {
+    background-color: #1f2937;
+}
+
+.header--logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header--links {
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.header--links a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
