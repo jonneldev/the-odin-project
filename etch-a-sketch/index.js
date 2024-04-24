@@ -8,7 +8,7 @@ function createGrid() {
     for (let i = 0; i < gridSize * gridSize; i++) {
 
         // Check if grid size is not above 100
-        if (gridSize >= 100) {
+        if (gridSize > 100) {
             gridSize = prompt("Grid size must be <100, please input <100")
         }
 
@@ -19,6 +19,18 @@ function createGrid() {
         squareDiv.style.width = squareSize + 'px';
         squareDiv.style.height = squareSize + 'px';
         divContainer.appendChild(squareDiv);
+
+        // Add event listener for mouseover with closure
+        squareDiv.addEventListener("mouseover", function() {
+            let interactions = 255; // Initialize interactions for each squareDiv
+            return function() {
+                interactions -= 25.5;
+                if (interactions < 0) {
+                    interactions = 0; // Ensure opacity doesn't exceed 1
+                }
+                squareDiv.style.backgroundColor = 'rgb(' + interactions + ',' + interactions + ',' + interactions + ')';
+            };
+        }());
     }
 }
 
@@ -32,4 +44,3 @@ editGrid.addEventListener("click", function newGrid() {
 
     createGrid(); // Recreate the grid with the new gridSize
 });
-
