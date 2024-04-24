@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square-div {
+    border: solid rgba(0, 0, 0, 0.316);
+    color: whitesmoke;
+    
+}
+
+#div-container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.square-div:hover {
+    background-color: black;
+}
