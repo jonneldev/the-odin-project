@@ -3,52 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up Form</title>
+    <title>Sign up - Job Posting Website</title>
     <link rel="stylesheet" href="sign-up-form.css">
 </head>
 <body>
-    <div class="container">
-        <div class="right-side">
-            <div class="image-sidebar-container">
-                <h1 class="image-sidebar">Trabaho sa Taiwan</h1>
-            </div>
+    <div class="main-container">
+        <div class="form-container">
+            <form id="signupForm">
+                <div class="input-container">
+                    <input 
+                    type="text" 
+                    name="firstName" 
+                    id="firstName"
+                    placeholder="First Name*"
+                    pattern="^[^0-9]+$"
+                    required
+                    >
+                    <label for="firstName">First Name</label>
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input 
+                    type="text" 
+                    name="lastName" 
+                    id="lastName"
+                    placeholder="Last Name*"
+                    pattern="^[^0-9]+$"
+                    required
+                    >
+                    <label for="lastName">Last Name</label>
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input 
+                    type="email" 
+                    name="userEmail" 
+                    id="userEmail"
+                    placeholder="Email*"
+                    required
+                    >
+                    <label for="userEmail">Email</label>
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input 
+                    type="tel" 
+                    name="mobileNum" 
+                    id="mobileNum"
+                    placeholder="Mobile No*"
+                    required
+                    >
+                    <label for="mobileNum">Mobile No.</label>
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Password*"
+                    required
+                    >
+                    <label for="password">Password</label>
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input 
+                    type="password" 
+                    name="confirmPassword" 
+                    id="confirmPassword"
+                    placeholder="Confirm Password*"
+                    required
+                    >
+                    <label for="confirmPassword">Confirm Password</label>
+                    <small>Error message</small>
+                </div>
+                
+                <button type="submit">Sign Up</button>
+            </form>
         </div>
-        <div class="left-side">
-            <p>Welcome to our Job Posting Website! We're excited to have you join our community, where opportunity meets talent. Our platform connects job seekers with employers, creating a seamless and efficient job search experience.</p>
-            <div class="form-container">
-                <h3>Kindly sign up to get started!</h3>
-                <form action="">
-                    <div>
-                        <input type="text" name="firstName" placeholder="First name" id="firstName">
-                        <label for="firstName">FIRST NAME</label>
-                    </div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <label for="">LAST NAME</label>
-                    </div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <label for="">EMAIL</label>
-                    </div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <label for="">PHONE NUMBER</label>
-                    </div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <label for="">PASSWORD</label>
-                    </div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <label for="">CONFIRM PASSWORD</label>
-                    </div>
-                </form>
-                <button>Create Account</button>
-                <p>weeeeeee</p>
-
-            </div>
-        </div>
-
     </div>
+
 </body>
 </html>
