@@ -95,12 +95,38 @@ button:hover {
     background-color: #2980b9;
 }
 
-input:invalid ~ span {
+input:invalid {
     display: block;
+
 }
 
-span {
-    display: none;
+.input-container span {
+    display: none; /* Hide error messages by default */
 }
 
+.input-container input:focus:invalid,
+.input-container input:not(:placeholder-shown):invalid {
+    border-color: red; /* Change border color when invalid */
+}
+
+.input-container input:not(:placeholder-shown):invalid + label + span {
+    display: block; /* Show error messages when the input is focused and invalid or when it has a value and is invalid */
+    color: red;
+}
+
+.input-container input:valid {
+    border-color: blue; /* Optional: Change border color when valid */
+}
+
+.existing-account {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.existing-account a {
+    color: blue;
+    text-decoration: underline;
+}
 
