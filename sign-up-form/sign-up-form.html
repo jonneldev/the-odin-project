@@ -18,9 +18,10 @@
                     placeholder="First Name*"
                     pattern="^[^0-9]+$"
                     required
+                    aria-describedby="firstNameError"
                     >
                     <label for="firstName">First Name</label>
-                    <small>Error message</small>
+                    <span id="firstNameError" class="error-message">Please enter a valid first name.</span>
                 </div>
                 <div class="input-container">
                     <input 
@@ -30,9 +31,10 @@
                     placeholder="Last Name*"
                     pattern="^[^0-9]+$"
                     required
+                    aria-describedby="lastNameError"
                     >
                     <label for="lastName">Last Name</label>
-                    <small>Error message</small>
+                    <span id="lastNameError" class="error-message">Please enter a valid last name.</span>
                 </div>
                 <div class="input-container">
                     <input 
@@ -41,9 +43,10 @@
                     id="userEmail"
                     placeholder="Email*"
                     required
+                    aria-describedby="userEmailError"
                     >
                     <label for="userEmail">Email</label>
-                    <small>Error message</small>
+                    <span id="userEmailError" class="error-message">Please enter a valid email address.</span>
                 </div>
                 <div class="input-container">
                     <input 
@@ -51,38 +54,30 @@
                     name="mobileNum" 
                     id="mobileNum"
                     placeholder="Mobile No*"
+                    pattern="^\d{11}$"
                     required
+                    aria-describedby="mobileNumError"
                     >
                     <label for="mobileNum">Mobile No.</label>
-                    <small>Error message</small>
+                    <span id="mobileNumError" class="error-message">Please enter a valid mobile number.</span>
                 </div>
                 <div class="input-container">
                     <input 
                     type="password" 
                     name="password" 
                     id="password"
+                    minlength="6"
                     placeholder="Password*"
                     required
+                    aria-describedby="passwordError"
                     >
                     <label for="password">Password</label>
-                    <small>Error message</small>
-                </div>
-                <div class="input-container">
-                    <input 
-                    type="password" 
-                    name="confirmPassword" 
-                    id="confirmPassword"
-                    placeholder="Confirm Password*"
-                    required
-                    >
-                    <label for="confirmPassword">Confirm Password</label>
-                    <small>Error message</small>
+                    <span id="passwordError" class="error-message">Enter at least six characters.</span>
                 </div>
                 
                 <button type="submit">Sign Up</button>
             </form>
         </div>
     </div>
-
 </body>
 </html>

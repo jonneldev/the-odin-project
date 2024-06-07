@@ -1,97 +1,106 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
 .main-container {
     height: 100vh;
-    width: 100vw;;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('bg2.jpg');
     background-size: cover;
-    background-position: center;
 }
 
 .form-container {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 400px;
-}
-
-.form-container h1 {
-    margin-bottom: 20px;
-    text-align: center;
+    max-width: 350px;
+    padding-top: 40px;
 }
 
 .input-container {
-    margin-bottom: 15px;
     position: relative;
+    margin-bottom: 25px;
 }
-
-.input-container label {
-    display: none;
-    position: absolute;
-    top: -15px;
-    left: 10px;
-    font-size: 12px;
-    color: #007bff;
-    transition: all 0.3s ease;
-}
-
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
-    display: block;
-}
-
 
 .input-container input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-}
-
-.input-container input:focus {
-    border-color: #007bff;
     outline: none;
+    transition: border-color 0.3s;
 }
 
-.input-container input.valid {
-    border-color: #28a745;
-}
-
-.input-container input.invalid {
-    border-color: #dc3545;
-}
-
-.input-container small {
-    display: none;
+.input-container label {
     position: absolute;
-    bottom: -20px;
-    left: 10px;
-    color: #dc3545;
+    top: -17px;
+    left: -1px;
+    padding: 0 5px;
+    font-size: 12px;
+    display: none;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.input-container .error-message {
+    display: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    display: block;
+    color: rgb(114, 215, 182);
+}
+
+.input-container input:valid + label {
+    color: rgb(0, 4, 2);
+}
+
+.input-container input:invalid + label {
+    color: red;
+    border-color: 4px solid red;
+}
+
+input:valid {
+    border-color: aquamarine;
 }
 
 button {
     width: 100%;
     padding: 10px;
+    background-color: #3498db;
+    color: white;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
 }
+
+input:invalid ~ span {
+    display: block;
+}
+
+span {
+    display: none;
+}
+
+
