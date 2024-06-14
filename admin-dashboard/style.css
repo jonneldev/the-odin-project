@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7e5e4
+}
+
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+ul {
+    list-style-type: none;
+    
+
+}
+.sidebar-container li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
