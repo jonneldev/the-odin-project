@@ -1,25 +1,25 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #e7e5e4
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
-
-img {
-    width: 20px;
-    height: 20px;
+.sidebar-container {
+    background-color:rgb(110, 226, 187);
+    color: aliceblue;
 }
 
-ul {
-    list-style-type: none;
-    
+h1 {
+    color: aliceblue;
+}
 
+.sidebar-icon,
+.dashboard-logo img {
+    filter: invert(1);
 }
-.sidebar-container li {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-}
+

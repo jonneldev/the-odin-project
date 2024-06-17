@@ -9,68 +9,163 @@
 <body>
     <div class="container">
         <div class="sidebar-container">
-            <h1>Dashboard</h1>
-            <ul>
-                <li>
-                    <img src="./svg/home.svg" alt="Home">Home
+            <div class="dashboard-logo">
+                <img src="./svg/view-dashboard-outline.svg" alt="">
+                <h1 class="sidebar-title">Dashboard</h1>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item">
+                    <img src="./svg/home.svg" alt="Home" class="sidebar-icon">Home
                 </li>
-                <li>
-                    <img src="./svg/card-account-details-outline.svg" alt="Profile">Profile
+                <li class="sidebar-item">
+                    <img src="./svg/card-account-details-outline.svg" alt="Profile" class="sidebar-icon">Profile
                 </li>
-                <li>
-                    <img src="./svg/message-reply-outline.svg" alt="Messages">Messages
+                <li class="sidebar-item">
+                    <img src="./svg/message-reply-outline.svg" alt="Messages" class="sidebar-icon">Messages
                 </li>
-                <li>
-                    <img src="./svg/clock-time-three-outline.svg" alt="History">History
+                <li class="sidebar-item">
+                    <img src="./svg/clock-time-three-outline.svg" alt="History" class="sidebar-icon">History
                 </li>
-                <li>
-                    <img src="./svg/file-document-multiple-outline.svg" alt="Task">Task
+                <li class="sidebar-item">
+                    <img src="./svg/file-document-multiple-outline.svg" alt="Task" class="sidebar-icon">Task
                 </li>
-                <li>
-                    <img src="./svg/account-group.svg" alt="Communities">Communities
+                <li class="sidebar-item">
+                    <img src="./svg/account-group.svg" alt="Communities" class="sidebar-icon">Communities
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <img src="./svg/cog.svg" alt="Setting">Setting
+            <ul class="sidebar-menu">
+                <li class="sidebar-item">
+                    <img src="./svg/cog.svg" alt="Setting" class="sidebar-icon">Setting
                 </li>
-                <li>
-                    <img src="./svg/help-box-outline.svg" alt="Support">Support
+                <li class="sidebar-item">
+                    <img src="./svg/help-box-outline.svg" alt="Support" class="sidebar-icon">Support
                 </li>
-                <li>
-                    <img src="./svg/shield-account.svg" alt="Privacy">Privacy
+                <li class="sidebar-item">
+                    <img src="./svg/shield-account.svg" alt="Privacy" class="sidebar-icon">Privacy
                 </li>
             </ul> 
         </div>
 
-        <header>
-            <div>
-                <input type="search">
-                <div>
-                    <img src="./svg/bell-ring-outline.svg" alt="">
-                    <img src="./svg/card-account-details-outline.svg" alt="">
-                    <h3>Sukuna</h3>
+        <header class="header">
+            <div class="header-content">
+                <input type="search" class="search-input">
+                <div class="header-icons">
+                    <img src="./svg/bell-ring-outline.svg" alt="Notifications" class="header-icon">
+                    <img src="./svg/card-account-details-outline.svg" alt="Profile" class="header-icon">
+                    <h3 class="header-username">Sukuna</h3>
                 </div>
 
-                <div>
-                    <div>
-                        <img src="./svg/card-account-details-outline.svg" alt="">
-                        <small>Hi There,</small>
-                        <h2>Sukuna</h2>
+                <div class="header-user">
+                    <div class="header-user-info">
+                        <img src="./svg/card-account-details-outline.svg" alt="Profile" class="header-user-icon">
+                        <small class="header-greeting">Hi There,</small>
+                        <h2 class="header-name">Sukuna</h2>
                     </div>
 
-                    <div>
-                        <button>New</button>
-                        <button>Upload</button>
-                        <button>Share</button>
+                    <div class="header-actions">
+                        <button class="header-button">New</button>
+                        <button class="header-button">Upload</button>
+                        <button class="header-button">Share</button>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main>
-            <div>
-                
+        <main class="main">
+            <div class="projects">
+                <h3 class="section-title">Your Projects</h3>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h5 class="project-title">Super Cool Projects</h5>
+                        <p class="project-description">
+                            Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
+                        </p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5 class="project-title">Less Cool Project</h5>
+                        <p class="project-description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5 class="project-title">Impossible App</h5>
+                        <p class="project-description">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5 class="project-title">Easy Peasy App</h5>
+                        <p class="project-description">Etiam cursus eros ac efficitur fringilla.
+                            Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5 class="project-title">Ad Blocker</h5>
+                        <p class="project-description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h5 class="project-title">Money Maker</h5>
+                        <p class="project-description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                            Pellentesque mollis nec sem vel aliquam.</p>
+                        <div class="project-images">
+                            <img src="" alt="Image 1" class="project-image">
+                            <img src="" alt="Image 2" class="project-image">
+                            <img src="" alt="Image 3" class="project-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements-trending">
+                <div class="announcements">
+                    <h3 class="section-title">Announcements</h3>
+                    <div class="announcement-list">
+                        <h5 class="announcement-title">Site Maintenance</h5>
+                        <p class="announcement-description">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue..</p>
+                        <h5 class="announcement-title">Community Share Day</h5>
+                        <p class="announcement-description">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor..</p>
+                        <h5 class="announcement-title">Updated Privacy Policy</h5>
+                        <p class="announcement-description">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h3 class="section-title">Trending</h3>
+                    <div class="trending-list">
+                        <img src="" alt="Trending 1" class="trending-image">
+                        <p class="trending-user">@tegan</p>
+                        <p class="trending-project">World Peace Builder</p>
+                        <img src="" alt="Trending 2" class="trending-image">
+                        <p class="trending-user">@morgan</p>
+                        <p class="trending-project">Super Cool Project</p>
+                        <img src="" alt="Trending 3" class="trending-image">
+                        <p class="trending-user">@kendall</p>
+                        <p class="trending-project">Life Changing App</p>
+                        <img src="" alt="Trending 4" class="trending-image">
+                        <p class="trending-user">@alex</p>
+                        <p class="trending-project">No Traffic </p>
+                    </div>
+                </div>
             </div>
         </main>
        
