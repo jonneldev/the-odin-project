@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -14,10 +19,7 @@
     color: aliceblue;
     padding-top: 20px;
     padding-left: 20px;
-}
-
-h1 {
-    color: aliceblue;
+    padding-right: 20px;
 }
 
 .dashboard-logo {
@@ -29,8 +31,8 @@ h1 {
 
 .dashboard-logo img {
     filter: invert(1);
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     margin-right: 18px;
 }
 
@@ -54,7 +56,29 @@ h1 {
     margin-bottom: 100px;
 }
 
-.header {
-    background-color: #f0fdfa;
+
+.header-icons img {
+    height: 32px;
+    width: 32px;
 }
 
+.header-user img {
+    height: 40px;
+    width: 40px;
+}
+
+.header {
+    background-color: red;
+    height: 20%;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icons {
+    display: flex;
+}
