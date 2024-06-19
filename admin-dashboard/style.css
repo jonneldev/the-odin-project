@@ -7,11 +7,17 @@
 body {
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
 }
 
 .container {
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr; /* Two rows: header and main content */
+
 }
 
 .sidebar-container {
@@ -20,6 +26,8 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    grid-column: 1 / 2;
+    grid-row:  1 / 3;
 }
 
 .dashboard-logo {
@@ -57,9 +65,22 @@ body {
 }
 
 
-.header-icons img {
+.header-icons .header-icon {
     height: 32px;
     width: 32px;
+}
+
+.header-icons .profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.header-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .header-user img {
@@ -67,18 +88,71 @@ body {
     width: 40px;
 }
 
+.header-user-info {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-self: start;
+}
+
+.header-actions {
+    justify-self: end;
+}
+
+.header-actions button {
+    width: 50px;
+    height: 30px;
+    background-color: #2dd4bf;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+}
+
+.header-user-info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
 .header {
-    background-color: red;
     height: 20%;
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-icons {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.header-content input {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 20px;
+}
+
+ 
+
