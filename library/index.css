@@ -13,10 +13,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 30px;
 }
 
 .library-title {
-    margin-top: 400px;
     color: #475569;
     font-size: 70px;
     font-weight: 700;
@@ -28,10 +28,6 @@ main .search-container {
     margin-top: 20px;
 }
 
-.card img {
-    height: 250px;
-    width: 200px;
-}
 
 .search-container input {
     width: 300px;
@@ -45,9 +41,81 @@ main .search-container {
     width: 85px;
     height: 30px;
     border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
-    
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+
+.card img {
+    height: 700px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        max-height: 400px; /* Adjust for smaller screens */
+    }
+}
+
+.card-details p, .card-details small {
+    margin-top: 10px;
+}
+
+.card-details p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.card-details small {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+.read-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.read-text {
+    margin: 0;
+}
+
+.remove-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.remove-button:hover {
+    background-color: #e74c3c; /* Example button hover background color */
 }
 
