@@ -5,7 +5,6 @@
 }
 
 .library-body {
-    height: 100vh;
     width: 100vw;
     background-color: #f8fafc;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +19,7 @@
     color: #475569;
     font-size: 70px;
     font-weight: 700;
+    margin-top: 50px;
 }
 
 main .search-container {
@@ -119,6 +119,36 @@ main .search-container {
     background-color: #e74c3c; /* Example button hover background color */
 }
 
+#newBookModal {
+    padding: 15px;
+    border-color:  #0dbd79;
+}
+
+#newBookModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure modal appears on top of other elements */
+}
+
+/* Optional overlay for modal backdrop */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+#newBookForm {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .form-group {
     margin-bottom: 15px;
@@ -133,9 +163,9 @@ main .search-container {
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group input[type="file"] {
-    width: calc(100% - 16px); /* Adjust width minus padding and borders */
+    width: 100%; 
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #0dbd79;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 14px; /* Adjust font size as needed */
@@ -144,6 +174,7 @@ main .search-container {
 .button-container {
     margin-top: 20px;
     text-align: right;
+
 }
 
 .button-container button {
