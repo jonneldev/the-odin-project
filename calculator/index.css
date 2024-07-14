@@ -82,3 +82,11 @@ input:hover {
 input:active {
     transform: translateY(2px); /* Move the button down slightly when clicked */
 }
+
+@media (min-width: 1024px) {
+    body {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
